@@ -1,5 +1,19 @@
-JSBroadcast is a javascript / python app that enables sending and 
-recieving messages from/to all the browsers running the same script (ex: 
-send a message to all the browsers visiting a website or a group of 
-websites)
+Developer : David Jonas - INTK Software
 
+JSBroadcast
+============
+
+JSBroadcast is a python/javascript app/librabry that enables sending 
+and recieving messages from/to all the browsers running the same script (ex: 
+send a message to all the browsers visiting a website or a group of websites)
+
+Installation
+============
+
+This product requires an Apache server with mod_python activated.
+Simply copy the files to your server and make use of the js files to 
+interface with the server. 
+
+Attention, JSBrodcast.js depends on the JQuery library that is included 
+in the package. if you already have jquery included on your site then 
+ignore the file.

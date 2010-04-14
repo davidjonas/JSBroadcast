@@ -12,17 +12,17 @@ JSBroadcast.maxRequests = 2;
 
 JSBroadcast.configure = function(attr)
 {
-	if(typeof( attr["server"] ) != "undefined")
+	if(typeof( attr.server ) != "undefined")
 	{
-		JSBroadcast.server = attr["server"];
+		JSBroadcast.server = attr.server;
 	}
 	else
 	{
 		JSBroadcast.server = "";
 	}
-	if(typeof( attr["domain"] ) != "undefined")
+	if(typeof( attr.domain ) != "undefined")
 	{
-		JSBroadcast.domain = attr["domain"];
+		JSBroadcast.domain = attr.domain;
 	}
 	else
 	{
@@ -114,12 +114,18 @@ JSBroadcast.step = function ()
 {
 	for(var i in JSBroadcast.registeredReceivers)
 	{
-		JSBroadcast.call(JSBroadcast.registeredReceivers[i]);
+		if (JSBroadcast.registeredReceivers.hasOwnProperty(i)) 
+		{
+			JSBroadcast.call(JSBroadcast.registeredReceivers[i]);
+		}
 	}
 	
 	for (var j in JSBroadcast.registeredFunctions)
 	{
-		JSBroadcast.registeredFunctions[j]();
+		if (JSBroadcast.registeredFunctions.hasOwnProperty(j)) 
+		{
+			JSBroadcast.registeredFunctions[j]();
+		}
 	}
 };
 
