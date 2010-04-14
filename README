@@ -1,0 +1,5 @@
+JSBroadcast is a javascript / python app that enables sending and 
+recieving messages from/to all the browsers running the same script (ex: 
+send a message to all the browsers visiting a website or a group of 
+websites)
+
