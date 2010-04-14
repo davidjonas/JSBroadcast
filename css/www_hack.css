@@ -1,0 +1,35 @@
+.www_hack_arrow
+{
+		position: absolute;
+		z-index: 9999999;
+		width: 20px;
+		height: 21px;
+		background-position: 0px 0px;
+		background-repeat:no-repeat;
+		background-image: url(../images/mac_pointer.png);
+}
+
+.www_hack_arrow.MacIntel
+{
+	background-image: url(../images/mac_pointer.png);
+}
+
+.www_hack_arrow.iPhone
+{
+	background-image: url(../images/mac_pointer.png);
+}
+
+.www_hack_arrow.MacPPC
+{
+	background-image: url(../images/mac_pointer_old.png);
+}
+
+.www_hack_arrow.Win32
+{
+	background-image: url(../images/ms_pointer.png);
+}
+
+.www_hack_arrow.Win64
+{
+	background-image: url(../images/ms_pointer.png);
+}
